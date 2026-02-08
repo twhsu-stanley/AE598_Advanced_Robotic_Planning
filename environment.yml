@@ -1,0 +1,26 @@
+name: ae598-arp
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - git
+  - jupyter
+  - ipympl
+  - numpy
+  - scipy
+  - sympy
+  - matplotlib
+  - pinocchio
+  - pytorch
+  - torchvision
+  - tensorboard
+  - qpsolvers
+  - mediapy
+  - robot_descriptions
+  - pip:
+    - git+https://github.com/meshcat-dev/meshcat-python.git
+    - git+https://github.com/stephane-caron/meshcat-shapes.git
+    - mujoco>=3.4.0
+    - 'stable-baselines3[extra]'
+    - 'gymnasium[mujoco]'
